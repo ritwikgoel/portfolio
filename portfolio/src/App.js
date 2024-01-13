@@ -1,11 +1,12 @@
 import './App.css';
 import './LandingPage'
 import LandingPage from './LandingPage';
-import Navbar from './Navbar';
+
+
 function App() {
   return (
+    // <div className="App" style={{ backgroundImage: "url(/main-bg.jpeg)" }}>
     <div className="App">
-     <Navbar></Navbar>
      <LandingPage></LandingPage>
     </div>
   );

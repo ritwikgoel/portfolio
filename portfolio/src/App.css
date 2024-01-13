@@ -41,7 +41,11 @@
 .maincard{
   width: 25%;
   padding: 2em;
-  background-color:#42fff9;
+  color: brown;
   border-radius: 5em;
+}
 
+h1 {
+  color: black;
+  font-weight: bold;
 }
