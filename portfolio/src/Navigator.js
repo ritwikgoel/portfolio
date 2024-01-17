@@ -1,20 +1,11 @@
-
 function Navigator() {
-    return (
-      <div className="navigator">
-               
-Navigator here            <a href="#about">About</a>
-            <br>
-            </br>
-            <a href="#experiance">Experience</a>
-            
-            <br>
-            </br>            
-            <a href="#projects">Projects</a>
+  return (
+    <div className="navigator">
+      <a href="#about">About</a><br /><br />
+      <a href="#experiance">Experience</a><br /><br />
+      <a href="#projects">Projects</a><br /><br />
+    </div>
+  );
+}
 
-</div>
-      
-    );
-  }
-  
-  export default Navigator;
+export default Navigator;

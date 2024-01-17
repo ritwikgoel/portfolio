@@ -65,14 +65,14 @@ h1 {
 
 .about-container {
   width: 50%; /* Adjust the width as needed */
-  text-align: right;
-  padding-left: 48%; /* Adjust as needed */
+  text-align: center;
+  padding-left: 45%; /* Adjust as needed */
+
 }
 
 .about {
   padding: 1.5em;
   color: #F0E991;
-  border-radius: 5em;
 }
 
 .experiance-container {
@@ -92,4 +92,28 @@ h1 {
 .projects {
   text-align: right;
   padding-right: 10em; /* Optional: Add some padding to create space between content and border */
+}
+
+
+.navigator {
+  padding-top: 2.5em;
+}
+
+.navigator a {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: underline;
+  animation: moveLink 2s infinite alternate ease-in-out; /* Continuous movement animation */
+}
+
+@keyframes moveLink {
+  to {
+    transform: translateY(5px); /* Adjust the movement distance as needed */
+  }
+}
+
+.navigator a:hover {
+  color: grey;
+  animation: none; /* Disable animation on hover */
 }
