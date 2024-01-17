@@ -19,6 +19,7 @@ h1 {
   font-weight: bold;
 }
 
+
 .maincard-container {
   display: flex;
   justify-content: center; /* Center the main card content */
@@ -38,6 +39,10 @@ h1 {
   text-align: center;
 }
 
+
+h5{
+  word-spacing: 0.52em;
+}
 .about,
 .experience,
 .projects {
@@ -102,5 +107,18 @@ h1 {
 
 
 .empty-space {
-  height: 8em; /* Adjust the height as needed */
+  height: 10em; /* Adjust the height as needed */
+}
+
+
+button{
+  border-radius: 2em;
+  background-color: ;
+  font-size: 2em;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
