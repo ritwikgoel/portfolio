@@ -1,20 +1,24 @@
-import About from "./About";
-import Experiance from "./Experiance";
-import MainCard from "./MainCard";
-import Projects from "./Projects";
-
+// LandingPage.jsx
+import React from 'react';
+import MainCard from './MainCard';
+import About from './About';
+import Experiance from './Experiance';
+import Projects from './Projects';
 
 function LandingPage() {
-    return (
-      <div className="landingpage">
-     
-      <MainCard></MainCard>
-      <About></About>
-      <Experiance></Experiance>
-      <Projects></Projects>
-
+  return (
+    <div className="landingpage">
+      <div className="maincard-container">
+        <MainCard />
       </div>
-    );
-  }
-  
-  export default LandingPage;
+      <div className="about-container">
+        <About />
+      </div>
+      <br />
+      <Experiance />
+      <Projects />
+    </div>
+  );
+}
+
+export default LandingPage;
