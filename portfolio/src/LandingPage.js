@@ -1,4 +1,3 @@
-// LandingPage.jsx
 import React from 'react';
 import MainCard from './MainCard';
 import About from './About';
@@ -11,15 +10,18 @@ function LandingPage() {
       <div className="maincard-container">
         <MainCard />
       </div>
+      
+      <div className="empty-space"></div>
+
       <div className="about-container">
         <About />
       </div>
       <br />
-
+      <div className="empty-space"></div>
       <div className="experiance-container">
-      <Experiance />
+        <Experiance />
       </div>
-      
+      <div className="empty-space"></div>
       <Projects />
     </div>
   );
