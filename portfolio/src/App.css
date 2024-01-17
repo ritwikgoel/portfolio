@@ -1,51 +1,14 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
 body {
-  background-image: url("../public/main-bg.jpeg"); /* Replace with the path to your image */
+  background-image: url("../public/main-bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0; /* Remove default body margin */
+  margin: 0;
 }
 
-
+.App {
+  text-align: center;
+  font-family: 'Abandoned', sans-serif;
+}
 
 h1 {
   color: pink;
@@ -54,66 +17,71 @@ h1 {
 
 .maincard-container {
   display: flex;
+  justify-content: center; /* Center the main card content */
 }
 
 .maincard {
-  width: 50%; /* Adjust the width as needed */
+  font-size: 1.4em;
+  width: 50%;
   padding: 2em;
   color: #F0E991;
   border-radius: 5em;
 }
 
-.about-container {
-  width: 50%; /* Adjust the width as needed */
+.about-container,
+.experience-container,
+.projects-container {
   text-align: center;
-  padding-left: 45%; /* Adjust as needed */
-
 }
 
-.about {
+.about,
+.experience,
+.projects {
   padding: 1.5em;
   color: #F0E991;
+  font-size: 1.5em;
+  padding: 6%;
+  font-weight: bold;
+  word-spacing: 0.52em;
+  line-height: 110%;
+
 }
 
-.experiance-container {
-  width: 50%; /* Adjust the width as needed */
-  text-align: right;
-  padding-left: 48%; /* Adjust as needed */
+.experience-container {
+  text-align: center;
 }
 
-.experiance {
+.experience {
   padding: 2em;
   color: brown;
   border-radius: 5em;
 }
 
-
-
 .projects {
-  text-align: right;
-  padding-right: 10em; /* Optional: Add some padding to create space between content and border */
+  text-align: center;
+  padding-right: 10em;
 }
-
 
 .navigator {
   padding-top: 2.5em;
 }
 
 .navigator a {
+  font-size: 2em;
   display: inline-block;
   margin-bottom: 10px;
   color: white;
   text-decoration: underline;
-  animation: moveLink 2s infinite alternate ease-in-out; /* Continuous movement animation */
+  animation: moveLink 2s infinite alternate ease-in-out;
 }
 
 @keyframes moveLink {
   to {
-    transform: translateY(5px); /* Adjust the movement distance as needed */
+    transform: translateY(12px);
   }
 }
 
 .navigator a:hover {
   color: grey;
-  animation: none; /* Disable animation on hover */
+  animation: none;
 }
