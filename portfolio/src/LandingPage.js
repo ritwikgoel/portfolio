@@ -15,7 +15,11 @@ function LandingPage() {
         <About />
       </div>
       <br />
+
+      <div className="experiance-container">
       <Experiance />
+      </div>
+      
       <Projects />
     </div>
   );

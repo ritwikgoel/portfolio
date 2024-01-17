@@ -3,6 +3,8 @@ import React from 'react';
 function About() {
   return (
     <div className="about-container">
+      <section id="about" />
+
       <div className="about">
         Hello and welcome to my digital space! I'm Ritwik Goel, 
         a Computer Engineering student at Columbia University, 

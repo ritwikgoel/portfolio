@@ -48,7 +48,7 @@ body {
 
 
 h1 {
-  color: black;
+  color: pink;
   font-weight: bold;
 }
 
@@ -59,9 +59,8 @@ h1 {
 .maincard {
   width: 50%; /* Adjust the width as needed */
   padding: 2em;
-  color: brown;
+  color: #F0E991;
   border-radius: 5em;
-  background-color: #e0e0e0; /* Optional: Add background color to the box */
 }
 
 .about-container {
@@ -71,17 +70,24 @@ h1 {
 }
 
 .about {
+  padding: 1.5em;
+  color: #F0E991;
+  border-radius: 5em;
+}
+
+.experiance-container {
+  width: 50%; /* Adjust the width as needed */
+  text-align: right;
+  padding-left: 48%; /* Adjust as needed */
+}
+
+.experiance {
   padding: 2em;
   color: brown;
   border-radius: 5em;
-  background-color: #e0e0e0; /* Optional: Add background color to the box */
 }
 
 
-.experiance {
-  text-align: right;
-  padding-right: 10em; /* Optional: Add some padding to create space between content and border */
-}
 
 .projects {
   text-align: right;

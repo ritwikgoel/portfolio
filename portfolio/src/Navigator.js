@@ -3,11 +3,10 @@ function Navigator() {
     return (
       <div className="navigator">
                
-            Hello this is the navigator aligator!<br></br>
-            <a href="#about">About</a>
+Navigator here            <a href="#about">About</a>
             <br>
             </br>
-            <a href="#experience">Experience</a>
+            <a href="#experiance">Experience</a>
             
             <br>
             </br>            

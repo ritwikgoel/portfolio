@@ -2,6 +2,8 @@
 function Projects() {
     return (
       <div className="projects">
+                    <section id="projects" />
+
                
         THIS IS THE PROJECTS SECTION
         <br>
