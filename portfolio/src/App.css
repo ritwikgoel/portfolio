@@ -1,8 +1,12 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-image: url("../public/main-bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
+
 }
 
 .App {
