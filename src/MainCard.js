@@ -9,6 +9,7 @@ function MainCard() {
     const audioElement = audioRef.current;
 
     if (audioElement) {
+      console.log("Audio Source:", audioElement.src);
       if (isMusicPlaying) {
         audioElement.pause();
       } else {
@@ -30,7 +31,7 @@ function MainCard() {
       <button onClick={toggleMusic}>
         {isMusicPlaying ? '🔇' : '   🎵   '}
       </button>
-      <audio ref={audioRef} src="public/bg.mp3" loop />
+      <audio ref={audioRef} src="https://raw.githubusercontent.com/ritwikgoel/portfolio/main/public/bg.mp3" loop />
       <Navigator />
     </div>
   );
