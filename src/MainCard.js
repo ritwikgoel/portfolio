@@ -30,7 +30,7 @@ function MainCard() {
       <button onClick={toggleMusic}>
         {isMusicPlaying ? '🔇' : '   🎵   '}
       </button>
-      <audio ref={audioRef} src="/bg.mp3" loop />
+      <audio ref={audioRef} src="public/bg.mp3" loop />
       <Navigator />
     </div>
   );
