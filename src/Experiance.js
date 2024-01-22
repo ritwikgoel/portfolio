@@ -1,19 +1,69 @@
 import React from 'react';
+import { Chrono } from 'react-chrono';
+import './Experiance.css'; // Import the external CSS file
 
-function Experiance() {
+const data = [
+  {
+    title: "Dice Enterprises",
+    cardTitle: "Backend Developer Intern",
+    cardDetailedText: "• Prototyped and created live production API’s to enhance search functionality on the platform, leading to a substantial 22% reduction in user search time through optimized data structures. • Streamlined the platform by porting code to vert.X, introducing boosted concurrency, and ensuring a more responsive user experience.",
+  },
+  {
+    title: "VeUp Technologies",
+    cardTitle: "Full Stack Developer Intern",
+    cardDetailedText: "• Optimized service sending scripts by executing a robust database caching mechanism, resulting in a 31% reduction in data retrieval time, and improved overall efficiency. • Designed and delivered multiple full-stack applications and REST-APIs for diverse clients, leveraging AWS services such as Lambda, S3, and EC2, to ensure seamless and scalable deployment for enhanced user experiences.",
+  },
+  {
+    title: "Computer Society of India- VIT Chapter",
+    cardTitle: "General Secretary",
+    cardDetailedText: "• Orchestrated and led a dynamic team of 27 in organizing 10+ events, drawing an impressive total of over 8000 participants. • Headed the organizing committee of DevSpace, one of India's largest international-level hackathons, further establishing the chapter's prominence in the tech community.",
+  },
+  {
+    title: "NetSepio",
+    cardTitle: "Open Source Contributor",
+    cardDetailedText: "• Collaborated with a team of 3 to create a sophisticated Discord utility bot. Delivered a solution for detecting phishing links on main server using GraphQL, golang and Kubernetes, ensuring consistent performance and scalability of the utility bot.",
+  },
+];
+
+const Experiance = () => {
   return (
-    <div className="experiance-container">
-
-      <div className="experiance">
+    <div>
       <section id="experiance" />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae suscipit tellus mauris a. Ultrices dui sapien eget mi proin sed libero. Orci dapibus ultrices in iaculis nunc sed augue lacus. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Ut tortor pretium viverra suspendisse potenti. Urna condimentum mattis pellentesque id nibh tortor id. Tellus cras adipiscing enim eu turpis egestas pretium. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Vulputate eu scelerisque felis imperdiet proin. A diam sollicitudin tempor id eu. Ullamcorper eget nulla facilisi etiam dignissim. Quis vel eros donec ac odio tempor orci.
+      <Chrono
+        items={data}
+        cardHeight={150}
 
-Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. Nunc id cursus metus aliquam eleifend. At volutpat diam ut venenatis tellus. Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Vitae turpis massa sed elementum tempus egestas. Quam elementum pulvinar etiam non quam. Cras fermentum odio eu feugiat pretium nibh ipsum consequat. Mi proin sed libero enim sed faucibus. Sem integer vitae justo eget magna fermentum iaculis. Dui faucibus in ornare quam viverra orci sagittis. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Adipiscing commodo elit at imperdiet dui accumsan. Sed viverra tellus in hac habitasse platea dictumst.
-
-Metus vulputate eu scelerisque felis imperdiet. Hac habitasse platea dictumst quisque. Duis at tellus at urna condimentum mattis pellentesque id nibh. Convallis a cras semper auctor neque vitae tempus. Id neque aliquam vestibulum morbi blandit cursus risus. Magna fringilla urna porttitor rhoncus. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Non arcu risus quis varius quam quisque. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Sollicitudin tempor id eu nisl nunc mi. Pellentesque elit eget gravida cum. Libero justo laoreet sit amet. Vel pharetra vel turpis nunc eget. Consectetur lorem donec massa sapien faucibus et. Euismod lacinia at quis risus sed vulputate. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Nec feugiat in fermentum posuere urna nec tincidunt.
-      </div>
+        mode="VERTICAL"
+        fontSizes={{
+          cardText: '5rem',
+          cardTitle: '3rem',
+          title: '2rem',
+        }}
+        theme={{
+          primary: "blue",
+          secondary: "yellow",
+          cardBgColor: "beige",
+          cardForeColor: "violet",
+          titleColor: "white",
+          titleColorActive: "red",
+          cardSubtitleColor: "green",
+          cardDetailsColor: "black"
+        }}
+        itemRenderer={({ item, index }, state) => {
+          const { isRight } = state;
+          return (
+            <div className={`chrono-item ${isRight ? 'left' : 'right'} custom-font`}>
+              <div>
+                <h2>{item.title}</h2>
+                <h3>{item.cardTitle}</h3>
+                <p className="bold-text">{item.cardDetailedText}</p>
+              </div>
+            </div>
+          );
+        }}
+      />
     </div>
   );
-}
+};
 
 export default Experiance;

@@ -6,8 +6,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
-
 }
+
+
 
 .App {
   text-align: center;
@@ -58,16 +59,18 @@ h5{
 
 .experience-container {
   text-align: center;
+  font-weight: bold;
 }
 
 .experiance {
-  padding: 1.5em;
+  padding: 1em;
   color: #F0E991;
-  font-size: 1.5em;
+  font-size: 5em;
   padding: 6%;
   font-weight: bold;
   word-spacing: 0.52em;
   line-height: 110%;
+  font-weight: bold;
   
 }
 
