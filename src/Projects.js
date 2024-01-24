@@ -45,7 +45,7 @@ function Projects() {
       >
         GitHub Profile
       </button>
-      <p>Make with love ( in a day )</p>
+      <p>Made with love ( in a day )</p>
     </div>
   );
 }
