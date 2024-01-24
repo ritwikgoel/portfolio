@@ -20,7 +20,7 @@ const data = [
   },
   {
     title: "NetSepio",
-    cardTitle: "Open Source Contributor",
+    cardTitle: "\n\nOpen SourceContributor",
     //cardDetailedText: "• Collaborated with a team of 3 to create a sophisticated Discord utility bot. Delivered a solution for detecting phishing links on main server using GraphQL, golang and Kubernetes, ensuring consistent performance and scalability of the utility bot.",
   },
 ];
@@ -55,7 +55,7 @@ const Experiance = () => {
             <div className={`chrono-item ${isRight ? 'left' : 'right'} custom-font`}>
               <div>
                 <h2>{item.title}</h2>
-                <h3>{item.cardTitle}</h3>
+                <h3 style={{ whiteSpace: 'pre-line' }}>{item.cardTitle}</h3>
                 <p className="bold-text">{item.cardDetailedText}</p>
               </div>
             </div>

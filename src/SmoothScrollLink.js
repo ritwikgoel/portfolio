@@ -9,7 +9,7 @@ function SmoothScrollLink({ targetId, children }) {
       window.scrollTo({
         top: targetElement.offsetTop,
         behavior: 'smooth',
-        duration: 2..,000, // Adjust the duration in milliseconds
+        duration: 2000, // Adjust the duration in milliseconds
       });
     }
   };
