@@ -19,8 +19,8 @@ function Projects() {
           cursor: 'pointer',
         }}
         onClick={() => {
-          // Replace 'your_resume_link' with the actual link to your resume
-          window.open('public/Resume-Ritwik Goel.pdf', '_blank');
+          // Replace 'google_docs_viewer_url' with the Google Docs Viewer URL to your resume PDF
+          window.open('https://docs.google.com/viewer?url=https://github.com/ritwikgoel/portfolio/raw/main/public/Resume-Ritwik%20Goel.pdf', '_blank');
         }}
       >
         View Resume
