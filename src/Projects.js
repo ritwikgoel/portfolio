@@ -1,19 +1,32 @@
+import React from 'react';
 
 function Projects() {
-    return (
-      <div className="projects">
-                    <section id="projects" />
+  return (
+    <div className="projects">
+      <section id="projects">
+        {/* Your existing content */}
+      </section>
 
-               
-        THIS IS THE PROJECTS SECTION
-        <br>
-        </br> Right align this and make 3 similar card versions!
-        <br>
-        </br>
-        This is the end of the projects section
-</div>
-      
-    );
-  }
-  
-  export default Projects;
+      {/* Add the transparent and big resume link button */}
+      <button
+        style={{
+          background: 'transparent',
+          fontSize: '24px',
+          padding: '10px',
+          border: '2px solid white',
+          borderRadius: '5px',
+          color: 'white',
+          cursor: 'pointer',
+        }}
+        onClick={() => {
+          // Replace 'your_resume_link' with the actual link to your resume
+          window.open('public/Resume-Ritwik Goel.pdf', '_blank');
+        }}
+      >
+        View Resume
+      </button>
+    </div>
+  );
+}
+
+export default Projects;
