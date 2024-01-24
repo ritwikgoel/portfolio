@@ -35,9 +35,9 @@ const Experiance = () => {
 
         mode="VERTICAL"
         fontSizes={{
-          cardText: '5rem',
-          cardTitle: '3rem',
-          title: '2rem',
+          cardText: '5em',
+          cardTitle: '3em',
+          title: '1.6em',
         }}
         theme={{
           primary: "blue",
