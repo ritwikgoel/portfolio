@@ -22,7 +22,7 @@ function MainCard() {
   return (
     <div className="maincard">
       <h1>Ritwik Goel</h1>
-      <h3>Student @ Columbia University</h3>
+      <h3>Grad Student @ Columbia University</h3>
       <h5>
         I build user-friendly software with a keen eye for detail, ensuring a
         <br />
