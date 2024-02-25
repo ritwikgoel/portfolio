@@ -33,7 +33,7 @@ const data = [
 
 const Experiance = () => {
   return (
-    <div>
+    <div className="experience-section">
       <section id="experiance" />
       <Chrono
         items={data}
