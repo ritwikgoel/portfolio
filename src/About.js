@@ -6,17 +6,7 @@ function About() {
       <section id="about" />
 
       <div className="about">
-        Hello and welcome to my digital space! I'm Ritwik Goel, 
-        a Computer Engineering student at Columbia University, 
-        passionate about exploring the dynamic intersections of 
-        technology and innovation. My journey in software development 
-        is marked by a keen interest in emerging technologies, including 
-        cloud computing, analytics, and core software development. The projects 
-        in my portfolio reflect my hands-on approach and a genuine curiosity 
-        for leveraging technology to create impactful solutions.
-        Join me on this journey where I blend creativity with technical expertise 
-        to navigate the ever-evolving landscape of the digital world.
-        This is the end of the about section
+      Welcome to my digital realm! I'm Ritwik Goel, studying Computer Engineering at Columbia University. My passion lies at the crossroads of technology and innovation, with a particular focus on cloud computing, analytics, and software development. My portfolio showcases my hands-on experience and curiosity in using technology to drive meaningful solutions. Let's explore the ever-changing digital landscape together, where I combine creativity and technical skills to make a difference.
       </div>
     </div>
   );
