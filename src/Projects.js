@@ -25,7 +25,7 @@ function Projects() {
         <button
           style={buttonStyle}
           onClick={() => {
-            window.open('https://drive.google.com/file/d/1Xiqv9VjKSglGShsPVdOuULDuw_ZdzBy8/view?usp=sharing', '_blank');
+            window.open('https://drive.google.com/file/d/1L8Z0kqaAFyMOCkaJ8JLVOIeqowTI-rPZ/view?usp=sharing', '_blank');
           }}
         >
           View Resume
