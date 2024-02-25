@@ -29,9 +29,9 @@ function MainCard() {
         seamless experience across different platforms and applications.
       </h5>
       <button onClick={toggleMusic} title={isMusicPlaying ? 'Mute' : 'Play Music'}>
-  {isMusicPlaying ? '🔇' : '   🎵   '}
+  {isMusicPlaying ? '🤫' : '   🔊   '}
 </button>
-<h3>Click the note!</h3>
+<h3 style={{ color: '#b98bcc' }}>Click on the speaker for the full experience!</h3>
       <audio ref={audioRef} src="https://raw.githubusercontent.com/ritwikgoel/portfolio/main/public/bg.mp3" loop />
       <Navigator />
     </div>
